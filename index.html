@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Pętle - Code Carrots JS</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,7 +40,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				      <section>
+				<section>
           <img src='cc.jpg' height="200" width="200" >
           <h1>Code Carrots</h1>
           <h3>Kurs JavaScript - pętle</h3>
@@ -62,8 +62,6 @@
           <p class="fragment roll-in">
             Będzie wyjście integracyjne :) 
           </p>
-
-
         </section>
 
         <section>
@@ -92,6 +90,7 @@
             A kto przypomni konstrukcję instrukcji warunkowych?
           </p>
         </section>
+
         <section>
           <section>
             <h2>Czym jest pętla?</h2>
@@ -118,12 +117,14 @@
               </ul>
             </p>
           </section>
-
+        </section>
+        <section>
           <section>
-            <h2> Pętla FOR - przykład </h2>
+            <h2> Pętla FOR </h2>
+            <p> Służy do powtarzania bloku kodu daną liczbę razy</p>
             <pre>
-              <code>
-                for (var i = 0, i<10, i++) {
+              <code contenteditable='true'>
+                for (var i = 0; i<10; i++) {
                     console.log(i);
                 }
               </code>
@@ -134,8 +135,81 @@
           <section>
             <img src='example.jpg'>
           </section>
+            
+          <section>
+            <h2> Zadania </h2>
+          </section>
+          <section>
 
-				
+            <h2> Pętla FOR ... IN </h2>
+            <p> Służy do przechodzenia przez wszystkie elementy danego obiektu</p>
+            <aside class = 'notes'>
+              przypomnieć czym są obiekty. Obiekty to struktury zawierające dane (i potem metody do działania na tych danych). konstrukcja klucz wartość
+            </aside>
+            <pre>
+              <code contenteditable='true'>
+                var codeCarrots = {mentor1: "Artur", mentor2: "Michał", mentor3: "Gosia"};
+                for (var mentor in codeCarrots) {
+                    console.log("Nasz mentor to " + codeCarrots[mentor]);
+                }
+              </code>
+            </pre>
+
+          </section>
+          <section>
+             <h2> Zadania </h2> 
+          </section>  
+        </section>
+				<section>
+          <section>
+            <h2>PĘTLA WHILE</h2>
+            <p>Służy do powtarzania bloku kodu do czasu, kiedy dany warunek przestanie być prawdziwy</p>
+            <pre>
+              <code contenteditable='true'>
+                var i = 0;
+                var array = [];
+                while ( i<10 ) {
+                    array[i] = i;
+                    i++;
+                }
+                console.log(array);
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Zadania </h2>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>PĘTLA DO WHILE</h2>
+            <p>Służy do powtarzania bloku kodu do czasu, kiedy dany warunek przestanie być prawdziwy</p>
+            <p class='fragment roll-in'>Ale w tym przypadku sprawdzamy warunek już po wykonaniu się bloku kodu</p>
+            <pre>
+              <code contenteditable='true'>
+                var i = 0;
+                var array = [];
+                do {
+                    array[i] = i;
+                    i++;
+                } while ( i<10 );
+                console.log(array);
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h2>Zadania </h2>
+          </section>
+        </section>
+
+        <section>
+          <h2>Praca domowa</h2>
+          
+        </section>
+
+
+
+
 			</div>
 
 		</div>
