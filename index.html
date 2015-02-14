@@ -106,14 +106,13 @@
           <section>
             <h2>Jak działa pętla</h2>
             <p>
-              Pętla powtarza wykonanie bloku kodu do określonego momentu. 
+              Pętla powtarza wykonanie bloku kodu gdy określony warunek jest spełniony. 
             </p>
             <p>
-              Ten moment może to być: 
+              Tym warunkiem może to być: 
               <ul>
                 <li>koniec tablicy, na której działamy</li>
                 <li>ewaluacja określonej wartości do false</li>
-                <li>sygnał od użytkownika</li>
               </ul>
             </p>
           </section>
@@ -131,10 +130,6 @@
             </pre>
 
           </section>
-
-          <section>
-            <img src='example.jpg'>
-          </section>
             
           <section>
             <h2> Zadania </h2>
@@ -148,10 +143,11 @@
             </aside>
             <pre class = 'long'>
               <code contenteditable='true'>
-                var codeCarrots = {mentor1: "Artur", mentor2: "Michał", mentor3: "Gosia"};
-                for (var mentor in codeCarrots) {
-                    console.log("Nasz mentor to " + codeCarrots[mentor]);
-                }
+                var codeCarrots = {nazwa: 'CodeCarrots', typ: 'warsztaty', liczbaUczestników: 23}
+                    for (var klucz in codeCarrots) {
+                        console.log( 'Wartość właściwości: "' + klucz + '" to: ', codeCarrots[klucz] );
+                    }
+
               </code>
             </pre>
 
