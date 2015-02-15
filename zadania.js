@@ -1,23 +1,3 @@
-var zad1 = function(){
-    
-};
-
-var zad2 = function(){
-    
-}
-
-var zad4=function(){
-    
-}
-
-var zad3 = function(){
-    
-}
-
-var zad5 = function() {
-    
-}
-
 // Stwórz tablicę złożoną z 10 elementów i wyświetl je w konsoli po kolei
 var show = function(){
     var array=[1,2,3,4,5,6,7,8,9,10]
