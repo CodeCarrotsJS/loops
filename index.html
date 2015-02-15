@@ -1,33 +1,33 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-		<title>Pętle - Code Carrots JS</title>
+  <title>Pętle - Code Carrots JS</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+  <!-- Printing and PDF exports -->
+  <script>
+   var link = document.createElement( 'link' );
+   link.rel = 'stylesheet';
+   link.type = 'text/css';
+   link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+   document.getElementsByTagName( 'head' )[0].appendChild( link );
+ </script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -51,7 +51,7 @@
 
         <section>
           <h2>Wyniki ankiety</h2>
-        
+
           <p class="fragment roll-in">
             Bardzo dziękujemy za wypełnienie, za wszystkie uwagi, a zwłaszcza te miłe :) 
           </p>
@@ -117,6 +117,8 @@
             </p>
           </section>
         </section>
+
+
         <section>
           <section>
             <h2> Pętla FOR </h2>
@@ -124,23 +126,27 @@
             <pre>
               <code contenteditable='true'>
                 for (var i = 0; i<10; i++) {
-                    console.log(i);
-                }
+                console.log(i);
+              };
               </code>
-            </pre>
+          </pre>
 
-          </section>
-            
-          <section>
-            <h2> Zadania </h2>
-            <p>Stwórz tablicę złożoną z 10 elementów i wyświetl je w konsoli po kolei</p>
-            <p>Wyświetl w konsoli liczby parzyste od 0 do 100</p>
-            <p>Stwórz tablicę, a następnie przy pomocą pętli stwórz tablicę zawierającą te same elementy w odwrotnej kolejności. Wyświetl je w alercie.</p>
-            <p>* Wyświetl w konsoli liczby od 100 do 1 <p>
-            <p>** Za pomocą pętli policz 10! </p>
-          </section>
-          <section>
+        </section>
 
+        <section>
+          <h2> Zadania </h2>
+          <p>Stwórz ręcznie tablicę złożoną z 10 elementów i wyświetl je w konsoli po kolei</p>
+          <p>Wyświetl w konsoli liczby parzyste od 0 do 100</p>
+          <p>Wyświetl w konsoli liczby od 100 do 1</p>
+          <p>* Stwórz ręcznie tablicę, a następnie przy pomocą pętli stwórz tablicę zawierającą te same elementy w odwrotnej kolejności. Wyświetl je w alercie. <p>
+            <p>** Za pomocą pętli policz silnię z dowolnej, podanej liczby </p>
+        </section>
+
+      </section>
+
+        <section>
+
+          <section>
             <h2> Pętla FOR ... IN </h2>
             <p> Służy do przechodzenia przez wszystkie elementy danego obiektu</p>
             <aside class = 'notes'>
@@ -149,77 +155,131 @@
             <pre class = 'long'>
               <code contenteditable='true'>
                 var codeCarrots = {nazwa: 'CodeCarrots', typ: 'warsztaty', liczbaUczestników: 23}
-                    for (var klucz in codeCarrots) {
-                        console.log( 'Wartość właściwości: "' + klucz + '" to: ', codeCarrots[klucz] );
-                    }
-
-              </code>
-            </pre>
-
-          </section>
-          <section>
-             <h2> Zadania </h2> 
-          </section>  
-        </section>
-				<section>
-          <section>
-            <h2>PĘTLA WHILE</h2>
-            <p>Służy do powtarzania bloku kodu do czasu, kiedy dany warunek przestanie być prawdziwy</p>
-            <pre>
-              <code contenteditable='true'>
-                var i = 0;
-                var array = [];
-                while ( i<10 ) {
-                    array[i] = i;
-                    i++;
-                }
-                console.log(array);
-              </code>
-            </pre>
-          </section>
-          <section>
-            <h2>Zadania </h2>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>PĘTLA DO WHILE</h2>
-            <p>Służy do powtarzania bloku kodu do czasu, kiedy dany warunek przestanie być prawdziwy</p>
-            <p class='fragment roll-in'>Ale w tym przypadku sprawdzamy warunek już po wykonaniu się bloku kodu</p>
-            <pre>
-              <code contenteditable='true'>
-                var i = 0;
-                var array = [];
-                do {
-                    array[i] = i;
-                    i++;
-                } while ( i<10 );
-                console.log(array);
-              </code>
-            </pre>
-          </section>
-          <section>
-            <h2>Zadania </h2>
-          </section>
+                for (var klucz in codeCarrots) {
+                console.log( 'Wartość właściwości: "' + klucz + '" to: ', codeCarrots[klucz] );
+              }
+            </code>
+          </pre>
         </section>
 
         <section>
-          <h2>Praca domowa</h2>
+         <h2> Zadania </h2> 
+         <p>Stwórz obiekt i wyświetl wszystkie jego elementy w formacie: "(klucz) wynosi (wartość)"</p>
+         <p>* stwórz tablicę zawierającą 3 obiekty. Wyświetl wszystkie elementy wszystkich obiektów, zaznaczając którego obiektu elementy są wyświetlone </p>
+       </section>
 
-        </section>
+     </section>
+
+     <section>
+      <section>
+        <h2>PĘTLA WHILE</h2>
+        <p>Służy do powtarzania bloku kodu do czasu, kiedy dany warunek przestanie być prawdziwy</p>
+        <pre>
+          <code contenteditable='true'>
+            var i = 0;
+            var array = [];
+            while ( i<10 ) {
+            array[i] = i;
+            i++;
+          }
+          console.log(array);
+        </code>
+      </pre>
+    </section>
+
+    <section>
+      <h2>Zadania </h2>
+      <p>Stwórz tablicę złożoną z 10 kolejnych wielokrotności liczby 5 za pomocą pętli while</p>
+      <p>Wyświetl w konsoli liczby parzyste od 0 do 100 za pomocą pętli while</p>
+      <p>* Pobieraj od użytkownika liczby tak długo, aż wpiszę liczbę większą niż 50. Wtedy wyświetl tablicę złożoną z wpisanych dotychczas liczb na stronie</p>
+
+    </section>
+  </section>
+
+  <section>
+    <section>
+      <h2>PĘTLA DO WHILE</h2>
+      <p>Służy do powtarzania bloku kodu do czasu, kiedy dany warunek przestanie być prawdziwy</p>
+      <p class='fragment roll-in'>Ale w tym przypadku sprawdzamy warunek już po wykonaniu się bloku kodu</p>
+      <pre>
+        <code contenteditable='true'>
+          var i = 0;
+          do {
+          console.log(i);
+        } while (i!=0);
+      </code>
+    </pre>
+  </section>
+  <section>
+    <h2>Zadania </h2>
+    <p>Wypisz na stronie elementy poniższej tablicy do elementu "stop" włącznie.</p>
+    <p>var myArray = ['uczę', 'się', 'programować', 'stop', 'lubię', 'to']</p>
+    <p><p>* Pobieraj od użytkownika liczby tak długo, aż wpiszę liczbę większą niż 50. Wtedy wyświetl tablicę złożoną z wpisanych dotychczas liczb na stronie z ostatnią włącznie</p>
+  </section>
+</section>
+
+<section>
+  <section>
+    <h2>Switch</h2>
+    <p>To taki nietypowy if. Pozwala na tworzenie kilku warunków na raz</p>
+    <pre>
+      <code contenteditable='true'>
+        var expr = 'jabłka'
+        switch (expr) {
+        case "Pomarancza":
+        console.log("Pomarańcze kosztują 2 zł");
+        break;
+        case "jabłka":
+        console.log("Jabłka kosztują 1 zł");
+        break;
+        case "Banan":
+        console.log("Banany kosztują 3 zł");
+        break;
+        default:
+        console.log("Nie mamy " + expr + ".");
+      }
+      </code>
+      </pre>
+    </section>
+    <section>
+      <h2>BREAK, CONTINUE</h2>
+      <p>Break przerywa działanie - zarówno pętli, zanim nasz kod się skończy, jak i instrukcji switch.</p>
+      <p>Continue powoduje natychmiastowe przejście do następnego obrotu pętli</p>
+    </section>
+    <section>
+      <h2>
+        Zadanie
+      </h2>
+      <p>Poproś użytkownika o wpisanie imienia i godziny. W alercie wyświetl użytkownikowi powitanie wraz z imieniem. Jeśli godzina wpisana przez użytkownika jest od 6 do 12, powitanie powinno brzmieć "dzień dobry", od 12 do 18 "Jak mija dzień?", od 18 do północy "Dobry wieczór", a od północy do 6 "idź spać!!!"</p>
+
+    </section>
+  </section> 
+
+  <section>
+    <section>
+
+      <h2>Praca domowa - trudna</h2>
+      <iframe width="854" height="510" src="https://www.youtube.com/embed/iSHPVCBsnLw" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section>
+      <p>Stwórz funkcję, która pobierze od użytkownika jego  typ "rock paper scissors lizard spock", następnie wylosuj typ komputera i pokaż w alercie, kto wygrał. </p>
+      <img src='http://a.tgcdn.net/images/products/additional/large/db2e_lizard_spock.jpg'>
+
+    </section>
+  </section>
 
 
 
 
-			</div>
+</div>
 
-		</div>
-    <script src='zadania.js'></script>
+</div>
+<script src='zadania.js'></script>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-		<script>
+<script>
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -233,16 +293,16 @@
 
 				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+       { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+       { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+       { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+       { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+       { src: 'plugin/zoom-js/zoom.js', async: true },
+       { src: 'plugin/notes/notes.js', async: true }
+       ]
+     });
 
 		</script>
 
 	</body>
-</html>
+  </html>
