@@ -47,24 +47,57 @@ var showObjectArray = function(){
 }
 // Stwórz tablicę złożoną z 10 kolejnych wielokrotności liczby 5 za pomocą pętli while
 var multipleOf5 = function(){
-
+    var i=1;
+    var array = [];
+    while (i<=10){
+        array.push(i*5);
+        i++;
+    }
+    return array;
 }
 // Wyświetl w konsoli liczby parzyste od 0 do 100 za pomocą pętli while
-var oddNumbers = function(){
+var evenNumbers = function(){
+    var i=0;
+    while (i<=100) {
+        console.log(i);
+        i+=2;
+    }
 
 }
 // * Pobieraj od użytkownika liczby tak długo, aż wpiszę liczbę większą niż 50. Wtedy wyświetl tablicę złożoną z wpisanych dotychczas liczb na stronie
-var arrayLessThen50 = function(){
-
+var arrayLessThen50 = function(){    
+    var array=[];
+    var number=prompt('podaj liczbę');
+   
+    while (number<50){
+        array.push(number);
+        number=prompt("podaj liczbę");
+    }
+    return array;
 }
 // Wypisz na stronie elementy poniższej tablicy do elementu "stop" włącznie.
 // var myArray = ['uczę', 'się', 'programować', 'stop', 'lubię', 'to']
 var stopArray = function(){
+    var myArray = ['uczę', 'się', 'programować', 'stop', 'lubię', 'to'];
+    var i=-1;
+    do {
+        i++;
+        document.write(myArray[i]);
+        console.log(myArray[i]);
+        }    
+    while (myArray[i]!='stop')
+
 
 }
 // Pobieraj od użytkownika liczby tak długo, aż wpiszę liczbę większą niż 50. Wtedy wyświetl tablicę złożoną z wpisanych dotychczas liczb na stronie z ostatnią włącznie
 var including50 = function(){
-
+    var array=[];
+    do {
+        var number=prompt('podaj liczbę');
+        array.push(number)
+    }
+    while (array[array.length-1]<50);
+    return array;
 }
 // Poproś użytkownika o wpisanie imienia i godziny. W alercie wyświetl użytkownikowi powitanie wraz z imieniem. Jeśli godzina wpisana przez użytkownika jest od 6 do 12, powitanie powinno brzmieć "dzień dobry", od 12 do 18 "Jak mija dzień?", od 18 do północy "Dobry wieczór", a od północy do 6 "idź spać!!!"
 var nameAndHour = function(){
